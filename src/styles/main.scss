@@ -1,20 +1,69 @@
-$bg: #1b0b53;
+$text: #27300f;
+$orange: #d26a22;
 $white: #fff;
 
-body {
-	background-color: $bg;
+.header {
+	max-width: 1440px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	box-sizing: content-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__nav {
+		display: flex;
+		list-style-type: none;
+		margin: 0;
+		padding-left: 0;
+		gap: 48px;
+	}
+
+	&__link {
+		color: $text;
+		font-size: 16px;
+		text-decoration: none;
+		&:hover {
+			color: $orange;
+		}
+	}
+
+	&__tel {
+		color: $text;
+		font-size: 16px;
+		font-weight: 500;
+		text-decoration: none;
+		&:hover {
+			color: $orange;
+		}
+	}
+
+	&__cart {
+		display: block; 
+		background-color: $orange;
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		background-image: url('../images/cart.svg');
+		background-size: 17px 15px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+
+	&__counter {
+		color: $white;
+		font-size: 8px;
+		position: absolute;
+		top: 5px;
+		right: 10px;
+	}
 }
 
-h1 {
-	color: $white;
-	text-align: center;
-	font-size: 40px;
-	font-weight: 700;
-}
-
-p {
-	color: $white;
-	text-align: center;
-	font-size: 20px;
-	font-weight: 400;
+.logo {
+	display: block;
+	background: url('../images/logo.svg') 0 0 no-repeat;
+	background-size: cover;
+	width: 122px;
+	height: 32px
 }

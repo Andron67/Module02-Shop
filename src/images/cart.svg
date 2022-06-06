@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="14" viewBox="0 0 16 14">
-  <image id="cart" width="16" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAA3klEQVQokaWSP0vCURSGn2M2lF+hwcEP0CCutTsL0hTo1BzN+k36EO66BoFTBNEgLc1C0fiIcM2f+vuT9MKFe86573vOfe/FXQw5EjVgnNYSuD5WIDYbdQJcRsRFijvATQX/pZ4JZkBXbUXEO9ACbguI58Ap0PvNqO3kxqCspVpT39TX9T5bOFGX6mOFQD81Opxu7YO6KCGHOlc/1Hregfuk3iwQ6Kb6XVGHttX4VM82nP0x5sAo+7w5eI6In5L6P6FeJS8ae9fLzef58JVcePhLfvsRtpgC38BTZR5YAYPx0/z9iCTHAAAAAElFTkSuQmCC"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14"><defs><style>.a{fill:#ffffff;}</style></defs><title>cart-black</title><path class="a" d="M2.09,1.46H0V0H3.23l2,8H11.5l2-4.1H6.64V2.47h9.13l-3.35,7H4.08Z"/><path class="a" d="M6.5,12.75A1.25,1.25,0,1,1,5.25,11.5,1.25,1.25,0,0,1,6.5,12.75Z"/><path class="a" d="M12.5,12.75a1.25,1.25,0,1,1-1.25-1.25A1.25,1.25,0,0,1,12.5,12.75Z"/></svg>
