@@ -100,6 +100,7 @@ body {
 	background-position-x: center;
 	position: relative;
 	padding-bottom: 18.7rem;
+	z-index: 0;
 	&__item {
 		margin-left: 12rem;
 		max-width: 378px;
@@ -130,8 +131,8 @@ body {
 	}
 
 	&__line {
-		width: 658px;
-		height: 658px;
+		width: 656px;
+		height: 656px;
 		border: 1px solid rgba($green, 0.4);
 		border-radius: 100%;
 		position: relative;
@@ -209,13 +210,15 @@ body {
 		bottom: 0px;
 		right: 0px;
 		width: 11rem;
+		z-index: -1;
 	}
 
 	&__avokado {
 		position: absolute;
-		top: 70px;
-		right: -40px;
-		width: 11rem;
+		top: 56px;
+		right: 0px;
+		width: 17.8rem;
+		z-index: -1;
 	}
 
 	&__cucumber {
@@ -223,20 +226,23 @@ body {
 		top: 0px;
 		left: 35%;
 		width: 11rem;
+		z-index: -1;
 	}
 
 	&__pepper {
 		position: absolute;
-		top: 35%;
-		left: 0px;
-		width: 11rem;
+		top: 397px;
+		left: 20px;
+		width: 8.6rem;
+		z-index: -1;
 	}
 
 	&__beans {
 		position: absolute;
 		bottom: 0px;
 		left: 0px;
-		width: 11rem;
+		width: 10.5rem;
+		z-index: -1;
 	}
 }
 
@@ -257,6 +263,7 @@ body {
 }
 
 .description {
+	line-height: 1.5;
 	margin: 0px;
 	&_size-s {
 		font-size: 1.8rem;
@@ -266,6 +273,7 @@ body {
 .link {
 	border-radius: 3.8rem;
 	color: $white;
+	letter-spacing: 0.13rem;
 	display: inline-block;
 	padding: 2.5rem 4.2rem;
 	background-color: $orange;
