@@ -55,8 +55,8 @@ body {
 	&__cart {
 		display: block; 
 		background-color: $orange;
-		width: 3.8rem;
-		height: 3.8rem;
+		width: 4rem;
+		height: 4rem;
 		border-radius: 100%;
 		background-image: url('../images/cart.svg');
 		background-size: 1.7rem 1.5rem;
@@ -82,8 +82,8 @@ body {
 .logo {
 	display: block;
 	background: url('../images/logo.svg') 0 0 no-repeat;
-	background-size: cover;
-	width: 12.3rem;
+	background-size: contain;
+	width: 12rem;
 	height: 3.2rem;
 }
 
@@ -227,7 +227,7 @@ body {
 
 	&__pepper {
 		position: absolute;
-		top: 50%;
+		top: 35%;
 		left: 0px;
 		width: 11rem;
 	}
