@@ -425,3 +425,67 @@ body {
 		right: 72px;
 	}
 }
+
+.about {
+	padding-bottom: 600px;
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 7rem;
+	}
+
+	&__text {
+		margin-left: 12rem;
+		flex-basis: 600px;
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		gap: 9rem;
+		font-family: $font-cormorant;
+		font-style: italic;
+		font-size: 3rem;
+		margin: 0;
+		padding-left: 0;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&::before {
+			content: '';
+			width: 84px;
+			height: 84px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			border: 1px solid rgba($green, .4);
+			border-radius: 100%;
+			margin-bottom: 1.5rem;
+		}
+		&:nth-child(1) {
+			&::before {
+				background-image: url('../images/fruits.svg');
+			   background-size: 44px 41px;
+			}
+		}
+
+		&:nth-child(2) {
+			&::before {
+				background-image: url('../images/traditional.svg');
+			   background-size: 39px 39px;
+			}
+		}
+
+		&:nth-child(3) {
+			&::before {
+				background-image: url('../images/about-icon-3.svg');
+			   background-size: 44px 41px;
+			}
+		}
+	}
+}
