@@ -284,11 +284,6 @@ body {
 	border-radius: 3.8rem;
 	display: inline-block;
 	text-decoration: none;
-	&__min {
-		font-size: 1.4rem;
-		padding: 2rem 3.4rem;
-		box-shadow: 0rem 1.0rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
-	}
 }
 
 .offer {
@@ -314,7 +309,7 @@ body {
 	&-slide {
 		border: 1px solid rgba($green, .4);
 		border-radius: 2rem;
-		padding: 3rem 3.7rem 3.8rem;
+		padding: 3rem 3.7rem 3.8rem 3.7rem;
 		box-sizing: border-box;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -325,7 +320,7 @@ body {
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
-			padding: 4rem 3.7rem;
+			padding: 4rem 4rem;
 			&:hover {
 				.swiper-slide__hover {
 					height: 253px;
@@ -690,6 +685,21 @@ body {
 		justify-content: space-between;
 		align-items: center;
 	}
+}
+
+.cart__btn {
+	background-color: transparent;
+	border: none;
+	color: $white;
+	letter-spacing: 0.13rem;
+	text-transform: uppercase;
+	padding: 2rem 3.4rem;
+	font-size: 1.4rem;
+	background-color: $orange;
+	box-shadow: 0rem 1.0rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
+	border-radius: 3.8rem;
+	display: inline-block;
+	text-decoration: none;
 }
 
 
