@@ -139,11 +139,11 @@ body {
 	}
 
 	&__image {
-		max-width: 685px;
+		max-width: 609px;
 		width: 100%;
 		position: relative;
-		top: 35px;
-		left: 38px;
+		top: 25px;
+		left: 25px;
 	}
 
 	&__btn {
@@ -284,6 +284,7 @@ body {
 	border-radius: 3.8rem;
 	display: inline-block;
 	text-decoration: none;
+	border: none;
 }
 
 .offer {
@@ -700,6 +701,222 @@ body {
 	border-radius: 3.8rem;
 	display: inline-block;
 	text-decoration: none;
+}
+
+.delivery {
+	padding: 100px 0px;
+	&__box {
+		display: flex;
+		font-size: 1.8rem;
+		line-height: 1.5;
+		margin: 5.6rem 0rem 0rem 12rem;
+		gap: 12%;
+	}
+
+	&__text {
+		flex-basis: 44%;
+	}
+
+	&__description {
+		margin-bottom: 2.6rem;
+	}
+
+	&__pay {
+		flex-basis: 37%;
+	}
+
+	&__link {
+		color: $green;
+		text-decoration: none;
+		position: relative;
+		&::after {
+			content: '';
+			background-color: #858881;
+			width: 100%;
+			height: 1px;
+			display: block;
+			position: absolute;
+			bottom: 3px;
+			left: 0px;
+		}
+	}
+
+	&__color {
+		color: $orange;
+	}
+
+	&__list {
+		padding: 0px;
+		display: flex;
+		justify-content: flex-start;
+		gap: 30px;
+	}
+
+	&__item {
+		list-style-type: none;
+		display: flex;
+		opacity: .4;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.itemdelivery__mastercard {
+	&::before {
+		display: block;
+		content: '';
+		background: url('../images/mastercard.svg');
+		width: 53px;
+		height: 32px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.itemdelivery__visa {
+	&::before {
+		display: block;
+		content: '';
+		background: url('../images/visa.svg');
+		width: 74px;
+		height: 24px;
+		background-repeat: no-repeat;
+	}
+}
+
+.itemdelivery__paypal {
+	&::before {
+		display: block;
+		content: '';
+		background: url('../images/paypal.svg');
+		width: 87px;
+		height: 24px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+
+.contact {
+	padding: 100px 0px 100px 0px;
+	&-box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&__text {
+			padding: 60px 0px 0px 122px;
+			max-width: 400px;
+			flex-grow: 1;
+		}
+
+		&__form {
+			flex-basis: 589px;
+		}
+	}
+
+	&__description {
+		margin-bottom: 50px;
+	}
+
+	&__list {
+		padding-left: 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 30px;
+	}
+
+	&__item {
+		list-style-type: none;
+		display: flex;
+	}
+
+	&__tel {
+		&::before {
+			margin-right: 30px;
+			display: block;
+			content: '';
+			background: url('../images/phone.svg');
+			background-repeat: no-repeat;
+			width: 29px;
+			height: 25px;
+			background-size: cover;
+		}
+	}
+	
+	&__mail {
+		&::before {
+			margin-right: 30px;
+			display: block;
+			content: '';
+			background: url('../images/mail.svg');
+			background-repeat: no-repeat;
+			width: 29px;
+			height: 25px;
+			background-size: cover;
+		}
+	}
+
+	&__link {
+		color: $green;
+		font-size: 24px;
+		text-decoration: none;
+	}
+}
+
+.card {
+	border: 2px solid rgba($green, .4);
+	padding: 3.2rem 5.8rem 4rem;
+	border-radius: 2rem;
+	&__title {
+		margin-top: 0px;
+		font-size: 30px;
+		font-family: $font-cormorant;
+	}
+
+	&__label {
+		display: block;
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+		margin-left: .6rem;
+	}
+
+	&__input {
+		box-sizing: border-box;
+		display: block;
+		border: 1px solid rgba($green, .4);
+		margin-bottom: 2.8rem;
+		border-radius: 2rem;
+		padding: 2.2rem 3rem;
+		width: 100%;
+		&:focus {
+			border: 1px solid rgba($green, 1);
+			outline: none;
+		}
+
+		&:invalid {
+			border: #ff0000;
+		}
+	}
+
+	&__check {
+		color:rgba($green, .6);
+		font-size: 1.2rem;
+		line-height: 1.5;
+		max-width: 360px;
+	}
+
+	&__link {
+		margin-top: 1.2rem;
+	}
+
+	&__docs {
+		color: rgba($green, .6);
+		font-size: 12px;
+		text-decoration: none;
+		border-bottom: 1px solid #ecedec;
+	}
 }
 
 
