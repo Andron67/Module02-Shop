@@ -38,6 +38,7 @@ body {
 	&__link {
 		color: $green;
 		text-decoration: none;
+		transition: .3s;
 		&:hover {
 			color: $orange;
 		}
@@ -64,6 +65,7 @@ body {
 		background-repeat: no-repeat;
 		border: 1px solid $orange;
 		position: relative;
+		transition: .3s;
 		&:hover {
 			background-color: $green;
 			border: 1px solid $green;
@@ -85,6 +87,15 @@ body {
 	background-size: contain;
 	width: 12rem;
 	height: 3.2rem;
+	&_logo {
+		flex-basis: 18rem;
+		height: 4.8rem;
+		margin-top: 0.8rem;
+	}
+   transition: .3s;
+	&:hover {
+		transform: scale(1.1);
+	}
 }
 
 .container {
@@ -917,6 +928,118 @@ body {
 		font-size: 12px;
 		text-decoration: none;
 		border-bottom: 1px solid #ecedec;
+	}
+}
+
+footer {
+	border-top: 1px solid #d4d6cf;
+	padding: 7.9rem 0rem 7rem 0rem;
+}
+
+.footer {
+	background: url('../images/footer.png') no-repeat;
+	background-size: cover;
+	background-position-x: center;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		font-size: 1.8rem;
+	}
+
+	&__info {
+		display: flex;
+		flex-basis: 66.5%;
+		justify-content: space-between;
+	}
+
+	&__list {
+		list-style-type: none;
+		padding-left: 0;
+		margin: 0;
+	}
+
+	&__item {
+		margin-bottom: 2.6rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__link {
+		color: $green;
+		text-decoration: none;
+		transition: .3s;
+		&:hover {
+			color: $orange;
+		}
+	}
+
+	&__tel {
+		color: $green;
+		text-decoration: none;
+		font-size: 2.7rem;
+		display: block;
+		margin-bottom: 3rem;
+		transition: .3s;
+		&:hover {
+			color: $orange;
+		}
+	}
+
+	&__text {
+		display: flex;
+		justify-content: space-between;
+		font-size: 1.6rem;
+		color: rgba($green, .6);
+		margin-top: 4rem;
+	}
+
+	&__author {
+		color: rgba($green, .6);
+		text-decoration: none;
+		transition: .2s;
+		&:hover {
+			color: rgba($green, 1);
+		}
+	}
+}
+
+.footer-social {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 0;
+	margin: 3rem 0rem 0rem 0rem;
+	&__link {
+		display: block;
+		width: 4rem;
+		height: 4rem;
+		border: 1px solid $green;
+		border-radius: 100%;
+		opacity: .8;
+		transition: .3s;
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__vk {
+		background: url('../images/vk.svg') no-repeat;
+		background-size: 2.3rem;
+		background-position: center;
+	}
+
+	&__inst {
+		background: url('../images/inst.svg') no-repeat;
+		background-size: 2.3rem;
+		background-position: center;
+	}
+
+	&__fb {
+		background: url('../images/fb.svg') no-repeat;
+		background-size: 2.3rem;
+		background-position: center;
 	}
 }
 
