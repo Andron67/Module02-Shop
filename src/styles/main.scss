@@ -541,16 +541,34 @@ body {
 		&_1 {
 			left: 0px;
 			top: 100px;
+			@media(max-width: $r_desk_1120) {
+				display: none;
+			}
 		}
 
 		&_2 {
 			right: -100px;
 			top: 253px;
+			@media(max-width: $r_desk_1350) {
+				top: 155px;
+			}
+			@media(max-width: $r_desk_1280) {
+				top: 160px;
+			}
+			@media(max-width: $r_desk_hd) {
+				top: 110px;
+			}
+			@media(max-width: $r_desk_1120) {
+				display: none;
+			}
 		}
 
 		&_3 {
 			right: 100px;
 			bottom: -210px;
+			@media(max-width: $r_desk_1120) {
+				display: none;
+			}
 		}
 	}
 
