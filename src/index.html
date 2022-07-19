@@ -32,13 +32,20 @@
 					</li>
 				</ul>
 			</nav>
-			<a href="tel:+79453425555" class="header__tel">+7 945 342 55 55</a>
+			<a href="tel:+79453425555" class = "header__tel">+7 945 342 55 55</a>
 			<div class = "header__buttons">
-					<a href="tel:+79453425555" class="header__phone"></a>
-					<button href="#" class="header__menu"></button>
-					<button href="#" class="header__cart">
-						<span class="header__counter">0</span>
-					</button>
+				<a href="tel:+79453425555" class = "header__phone"></a>
+				<button href = "#" class = "header__menu"></button>
+				<button href = "#" class = "header__cart">
+					<span class="header__counter">0</span>
+				</button>
+				<div class = "header__dropdown" id = "Notification">
+					<div class = "header__cover">
+						<img class = "header__img" src="images/catolog/milk.png" alt="Молоко">
+					</div>
+					<p>Вы добавили в корзину<a href = "#" class = "header__product">Топлёное молоко</a></p>
+					<button type = "button" class = "close" onclick = "document.getElementById('Notification').style.visibility = 'hidden'"></button>
+				</div>  
 			</div>
 		</header>
 		<div class="container">
@@ -64,15 +71,33 @@
 					<div class="main__line">
 						<img class = "main__image" src="images/plate.png" alt="Блюдо">
 					</div>
-					<button class="main__btn main__btn_01" type = "button">
+					<button class="main__btn main__btn_01" type = "button" onclick = "document.getElementById('FoodOne').style.visibility = 'visible'">
 						<span class="main__food">Авокадо</span>134 руб
 					</button>
-					<button class="main__btn main__btn_02" type = "button">
+					<div class="main__about main__about_1" id = "FoodOne">
+						<h3 class="main__title">Авокадо</h3>
+						<p class="main__description">Авокадо свежий, спелое</p>
+						<p class="main__price">134 руб/кг</p>
+						<button class="close" onclick = "document.getElementById('FoodOne').style.visibility = 'hidden'"></button>
+					</div>
+					<button class="main__btn main__btn_02" type = "button" onclick = "document.getElementById('FoodTwo').style.visibility = 'visible'">
 						<span class="main__food">Картофель</span>169 руб
 					</button>
-					<button class="main__btn main__btn_03" type = "button">
+					<div class="main__about main__about_2" id = "FoodTwo">
+						<h3 class="main__title">Картофель</h3>
+						<p class="main__description">Картофель Молодой,Свежий урожай, 1кг</p>
+						<p class="main__price">169 руб/кг</p>
+						<button class="close" onclick = "document.getElementById('FoodTwo').style.visibility = 'hidden'"></button>
+					</div>
+					<button class="main__btn main__btn_03" type = "button" onclick = "document.getElementById('FoodThree').style.visibility = 'visible'">
 						<span class="main__food">Томаты</span>215 руб
 					</button>
+					<div class="main__about main__about_3" id = "FoodThree">
+						<h3 class="main__title">Томаты</h3>
+						<p class="main__description">Помидоры фермерские, спелые</p>
+						<p class="main__price">215 руб/кг</p>
+						<button class="close" onclick = "document.getElementById('FoodThree').style.visibility = 'hidden'"></button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -89,7 +114,7 @@
 				<span class="title__span">предлагаем</span>
 			</h1>
 			<div class="offer__text">
-				<p class="description description_size-m">
+				<p class="description description__size-m">
 					Органика — это целостная система производства по-настоящему чистой, 
 					натуральной и полезной продукции
 				</p>
@@ -231,7 +256,7 @@
 			</h1>
 			<div class="about__box">
 				<div class="about__text">
-					<p class="description description_size-s">
+					<p class="description description__size-s">
 						Мы полностью контролируем весь цикл производства – от поля до прилавка за счет собственной серьезной материальной и научной базы. Наш подход направлен на высокие технологии и достижения научного прогресса.
 					</p>
 				</div>
@@ -257,7 +282,7 @@
 				<span class="title__span">новинки</span>
 			</h1>
 			<div class="trends__text">
-				<p class="description description_size-m">
+				<p class="description description__size-m">
 					Будь в тренде с современым миром, и будь здоров вместе с нами
 				</p>
 			</div>
@@ -395,22 +420,23 @@
 				</p>
 			</div>
 			<ul class="category catalog__list">
-				<li class="category__item">
-					<a href="#" class="category__link">Молочные продукты</a>
-				</li>
-				<li class="category__item">
-					<a href="#" class="category__link">Бакалея</a>
-				</li>
-				<li class="category__item">
-					<a href="#" class="category__link">Мясо, птица</a>
-				</li>
-				<li class="category__item">
-					<a href="#" class="category__link">Детям</a>
-				</li>
-				<li class="category__item">
-					<a href="#" class="category__link">Овощи и фрукты</a>
-				</li>
+					<li class="category__item">
+						<a href="#" class="category__link">Молочные продукты</a>
+					</li>
+					<li class="category__item">
+						<a href="#" class="category__link">Бакалея</a>
+					</li>
+					<li class="category__item">
+						<a href="#" class="category__link">Мясо, птица</a>
+					</li>
+					<li class="category__item">
+						<a href="#" class="category__link">Детям</a>
+					</li>
+					<li class="category__item">
+						<a href="#" class="category__link">Овощи и фрукты</a>
+					</li>
 			</ul>
+		
 			<div class="catalog-grid">
 				<div class="catalog-grid__item">
 					<div class="catalog-grid__cover">
@@ -622,7 +648,9 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__box">
-				<a href="#" class="logo logo_footer"></a>
+				<div class="footer__logo">
+					<a href="#" class="logo logo__footer"></a>
+				</div>
 				<div class="footer__info">
 					<ul class="footer__list">
 						<li class="footer__item">
