@@ -31,6 +31,7 @@ html {
 body {
 	background: url('../images/bg.png') 0 0 no-repeat;
 	background-size: contain;
+	overflow-x: hidden;
 	color: $green;
 	font-size: 1.6rem;
 	font-family: $font-jost;
@@ -462,6 +463,7 @@ body {
 		color: $green;
 		position: absolute;
 		text-align: left;
+		outline: none;
 		z-index: 100;
 		cursor: pointer;
 		&:hover {
@@ -655,6 +657,9 @@ body {
 		left: 35%;
 		width: 11rem;
 		z-index: -1;
+		@media(max-width: $r_tab) {
+			width: 8rem;
+		}
 		@media(max-width: $r_mob_500) {
 			transform: rotate(90deg);
 			top: inherit;
@@ -1326,10 +1331,11 @@ body {
 		box-sizing: border-box;
 		transition: .3s;
 		&:hover {
-			box-shadow: 0 0 0 2px rgba($green, .4) inset;
+			box-shadow: 0 0 0 1px rgba($green, .4) inset;
 		}
 		
 		@media(max-width: $r_tab) {
+			text-align: center;
 			padding: 2.2rem 2rem 2.8rem;
 		}
 		@media(max-width: $r_mob_500) {
@@ -1396,6 +1402,9 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media(max-width: $r_tab) {
+			justify-content: center;
+		}
 		@media(max-width: $r_mob_500) {
 			flex-direction: column;
 			justify-content: flex-end;
@@ -1626,8 +1635,12 @@ body {
 			justify-content: space-between;
 			flex-direction: row;
 		}
-		@media(max-width: $r_mob_500) {
-			padding-bottom: 30px;
+		@media(max-width: $r_mob_600) {
+			padding: 0px 15px 30px 15px;
+			gap: 5px;
+		}
+		@media(max-width: $r_mob_360) {
+			padding: 0px 5px 30px 5px;
 			gap: 5px;
 		}
 	}
@@ -1679,6 +1692,9 @@ body {
 			color: $orange;
 		}
 		@media(max-width: $r_mob_600) {
+			font-size: 18px;
+		}
+		@media(max-width: $r_mob_500) {
 			font-size: 12px;
 		}
 	}
@@ -1866,9 +1882,10 @@ footer {
 			@media(max-width: $r_mob_360) {
 				font-size: 1.2rem;
 			}
-		}
-		&-link:hover{
-			color: rgba($green, 1);
+			transition: .3s;
+			&:hover{
+				color: rgba($green, 1);
+			}
 		}
 	}
 }
