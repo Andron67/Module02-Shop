@@ -600,23 +600,26 @@ body {
 	&__description {
 		color:rgba($green, .7);
 		font-size: 1.4rem;
-		font-family: $font-cormorant;
+		font-family: $font-jost;
 		line-height: 1.5;
-		max-width: 300px;
+		max-width: 140px;
 		margin-bottom: 0;
 	}
 	 
 	&__price {
 		color:rgba($green, .7);
-		font-size: 1.6rem;
-		font-family: $font-cormorant;
-		line-height: 1.5;
-		max-width: 300px;
+		font-size: 1.4rem;
+		font-family: $font-jost;
+		line-height: 1.2;
+		font-weight: 700;
 		margin-bottom: 0;
 	}
 
 	&__food {
 		display: block;
+		font-size: 1.6rem;
+		font-weight: 500;
+		line-height: 1.5;
 		color: rgba($green, 0.8)
 	}
 
