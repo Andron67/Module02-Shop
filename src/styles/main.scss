@@ -1584,7 +1584,7 @@ body {
 			gap: 20px
 		}
 		&__text {
-			padding: 60px 0px 0px 122px;
+			padding: 40px 0px 0px 122px;
 			max-width: 400px;
 			flex-grow: 1;
 			@media(max-width: $r_desk_1350) {
@@ -1607,13 +1607,6 @@ body {
 			}
 		}
 
-		&__description {
-			margin-bottom: 70px;
-			@media(max-width: $r_mob_500) {
-				padding-bottom: 20px;
-			}
-		}
-
 		&__form {
 			flex-basis: 589px;
 			@media(max-width: $r_tab_900) {
@@ -1622,8 +1615,16 @@ body {
 
 			@media(max-width: $r_mob_500) {
 				flex-basis: 440px;
-				
 			}
+		}
+	}
+
+	&__description {
+		display: block;
+		padding-bottom: 43px;
+		line-height: 1.5;
+		@media(max-width: $r_mob_500) {
+			padding-bottom: 20px;
 		}
 	}
 
@@ -1633,7 +1634,7 @@ body {
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
-		gap: 30px;
+		gap: 20px;
 		@media(max-width: $r_tab_900) {
 			justify-content: space-between;
 			flex-direction: row;
