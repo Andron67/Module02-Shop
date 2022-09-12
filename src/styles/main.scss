@@ -19,6 +19,7 @@ $r_desk_1120: 1120px;
 $r_desk_hd: 1200px;
 $r_desk_1280: 1280px;
 $r_desk_1350: 1350px;
+$r_desk_1450: 1450px;
 $r_desk_full_1750: 1750px;
 
 html {
@@ -768,8 +769,11 @@ body {
 	transition: .3s;
 	&_max {
 		padding: 2.4rem 5.3rem;
+		@media(max-width: $r_desk_1450) {
+			padding: 2.0rem 3.0rem;
+		}
 		@media(max-width: $r_desk_1280) {
-			padding: 1.7rem 2.5rem;
+			padding: 1.7rem 2.3rem;
 		}
 		@media(max-width: $r_desk_hd) {
 			padding: 2.4rem 5.0rem;
@@ -936,6 +940,10 @@ body {
 			font-family: $font-cormorant;
 			font-size: 3rem;
 			margin-bottom: 0;
+			@media(max-width: $r_desk_1280) {
+				font-size: 2.8rem;
+				
+			}
 			@media(max-width: $r_mob_500) {
 				font-size: 1.75rem;
 				margin-top: 0;
