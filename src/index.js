@@ -72,7 +72,7 @@ var swiper = new Swiper(".offerSwiper", {
 	}
  });
 
- var swiper = new Swiper(".catSwiper", {
+ var swiper = new Swiper(".categorySwiper", {
 	slidesPerView: 3,
 	spaceBetween: 30,
 	slidesPerGroup: 3,
