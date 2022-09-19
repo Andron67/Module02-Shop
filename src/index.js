@@ -83,14 +83,14 @@ var swiper = new Swiper(".offerSwiper", {
 	  clickable: true,
 	},
 	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
-	},
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	 },
 	modules: [Navigation, Pagination],
 	breakpoints: {
 		320: {
-		  slidesPerView: 1,
-		  slidesPerGroup: 1
+		  slidesPerView: 3,
+		  slidesPerGroup: 3
 		},
 
 		768: {
