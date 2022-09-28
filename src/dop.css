@@ -1,0 +1,29 @@
+&__cover {
+	position: relative;
+	overflow: hidden;	
+	display: flex;
+	justify-content: center;
+	width: 204px;	
+	width: 100%;
+	height: 204px;
+	@media(max-width: $r_tab) {
+		height: 150px;
+	}
+	@media(max-width: $r_mob_500) {
+		max-width: 100px;
+		height: 100px;
+	}
+}
+
+&__image {
+	display: block;
+	max-width: 204px;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+	animation: image 5s linear infinite;
+	@media(max-width: $r_mob_500) {
+		max-width: 100px;
+		height: 100px;
+	}
+}
