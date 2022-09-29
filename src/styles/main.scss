@@ -1283,7 +1283,6 @@ body {
 	&-nav {
 		padding-left: 0px;
 		list-style-type: none;
-		gap: 2rem;
 	}
 
 	&__swiper-button {
@@ -1298,13 +1297,18 @@ body {
 
 	&__item {
 		display: flex;
+		flex-basis: 227px;
 		justify-content: center;
 		align-items: center;
 		border: 1px solid rgba($green, .4);
-		border-radius: 3.5rem;
 		height: 7rem;
+		border-radius: 3.5rem;
 		transition: .3s;
+		@media(max-width: $r_mob_600) {
+			flex-basis: 180px;
+		}
 		@media(max-width: $r_mob_500) {
+			flex-basis: 130px;
 			height: 5rem;
 			border-radius: 2.5rem;
 		}
@@ -1326,8 +1330,6 @@ body {
 			padding: 1.0rem 0rem;
 		}
 	}
-
-	
 
 	&__list {
 		margin: 8.5rem 0rem 5rem 0rem;

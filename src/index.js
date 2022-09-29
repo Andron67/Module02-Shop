@@ -74,7 +74,7 @@ var swiper = new Swiper(".offerSwiper", {
 
  var swiper = new Swiper(".categorySwiper", {
 	slidesPerView: 3,
-	spaceBetween: 30,
+	spaceBetween: 20,
 	slidesPerGroup: 3,
 	loop: true,
 	loopFillGroupWithBlank: true,
@@ -86,6 +86,7 @@ var swiper = new Swiper(".offerSwiper", {
 	breakpoints: {
 		320: {
 		  slidesPerView: 3,
+		  spaceBetween: 10,
 		  slidesPerGroup: 3
 		},
 
