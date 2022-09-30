@@ -91,13 +91,13 @@ var swiper = new Swiper(".offerSwiper", {
 		},
 
 		768: {
-			slidesPerView: 3,
-			slidesPerGroup: 3
+			slidesPerView: 4,
+			slidesPerGroup: 4
 		},
 
 		1024: {
-			slidesPerView: 6,
-			slidesPerGroup: 6,
+			slidesPerView: 5,
+			slidesPerGroup: 5,
 			loop: false,
 			loopFillGroupWithBlank: false,
 		}
