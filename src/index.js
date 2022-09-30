@@ -73,9 +73,9 @@ var swiper = new Swiper(".offerSwiper", {
  });
 
  var swiper = new Swiper(".categorySwiper", {
-	slidesPerView: 3,
+	slidesPerView: 6,
 	spaceBetween: 20,
-	slidesPerGroup: 3,
+	slidesPerGroup: 6,
 	loop: true,
 	loopFillGroupWithBlank: true,
 	navigation: {
@@ -96,8 +96,8 @@ var swiper = new Swiper(".offerSwiper", {
 		},
 
 		1024: {
-			slidesPerView: 5,
-			slidesPerGroup: 5,
+			slidesPerView: 6,
+			slidesPerGroup: 6,
 			loop: false,
 			loopFillGroupWithBlank: false,
 		}
