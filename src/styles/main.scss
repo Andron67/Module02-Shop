@@ -320,7 +320,7 @@ body {
 	max-width: 1440px;
 	margin: 0px auto;
 	padding: 0px 15px;
-	box-sizing: content-box;
+	box-sizing: border-box;
 	@media(max-width: $r_tab) {
 		max-width: 600px;
 		padding: 0px 10px;
@@ -1281,6 +1281,7 @@ body {
 .catalog {
 	padding-top: 18.5rem;
 	padding-bottom: 0rem;
+	overflow-x: hidden;
 	@media(max-width: $r_tab) {
 		padding-bottom: 8rem;
 	}
