@@ -849,6 +849,7 @@ body {
    &-slide_card {
 		border: 1px solid rgba($green, .4);
 		border-radius: 2rem;
+		overflow: hidden;
 		padding: 3rem 3.7rem 3.8rem 3.7rem;
 		box-sizing: border-box;
 		background-repeat: no-repeat;
@@ -1027,9 +1028,6 @@ body {
 		&__cover {
 			position: relative;
 			overflow: hidden;
-			display: flex;
-			justify-content: center;
-			max-width: 270px;
 			width: 100%;
 			height: 322px;
 			@media(max-width: $r_mob_500) {
@@ -1039,10 +1037,9 @@ body {
 
 		&__image {
 			position: absolute;
-			max-width: 351px;
-			width: 100%;
-			max-height: 322px;
-			height: 100%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 			object-fit: contain;
 			@media(max-width: $r_mob_500) {
 				max-height: 140px;
