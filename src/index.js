@@ -78,11 +78,7 @@ var swiper = new Swiper(".offerSwiper", {
 	slidesPerGroup: 5,
 	loop: true,
 	loopFillGroupWithBlank: true,
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	 },
-	modules: [Navigation, Pagination],
+	
 	breakpoints: {
 		320: {
 		  slidesPerView: 3,
