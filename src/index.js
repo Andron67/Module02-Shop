@@ -76,6 +76,8 @@ var swiper = new Swiper(".offerSwiper", {
  var swiper = new Swiper(".categorySwiper", {
 	slidesPerView: "auto",
 	spaceBetween: 20,
+	loop: true,
+	loopFillGroupWithBlank: true,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,

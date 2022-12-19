@@ -134,6 +134,7 @@ body {
 		}
 
 		&:hover {
+			cursor: pointer;
 			background-color: $green;
 			border: 1px solid $green;
 			@media(max-width: $r_desk_hd) {
